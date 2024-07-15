@@ -142,7 +142,7 @@ export function useLocalStorage<T>(
     localStorage.setItem("bookmarkedIds", JSON.stringify(value));
   }, [value, key]);
 
-  return [value, setValue] as const;
+  return [value, setValue];
 }
 
 export function useOnClickOutside(
